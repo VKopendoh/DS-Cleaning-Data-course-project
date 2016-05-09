@@ -1,42 +1,45 @@
 ==================================================================
-Tidy data and transformed DATA from source data. 
+Tidy and transformed DATA from source data. 
 ==================================================================
 'Source data' called:
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 
-and you can find it here:
+and you can find it here: </br>
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-==================================================================
+
 
 #### Data file: 'data.csv'
-Data was created by merging 'test' and 'train' a data from source, complete description of this proccess described at Readme.md file in this repository. And you can create it automaticaly with starting a script 'run_analysis.R' from this repo (note: you need have an internet connection than running this script).
+Data was created by merging 'test' and 'train' data from source, complete description of this proccess you can read at Readme.md file in this repository. And you can create it automaticaly with starting a script 'run_analysis.R' from this repo (note: you need have an internet connection than running this script).
 
 #### Variables:
-- 'activity' a 'character' name of activity (walking, walking_upstairs, walking_downstairs, sittings, standing, laying).
-- 'subjectID' an 'integer' ID of obtained subject in range 1 to 30.
-- 'Averege Featured variables' a 'double' average of each 'Featured variable' from 'Source Data' (note: only for Mean and Standard deviation variables in source) for each activity and each subject ('AVG' prefix means avarege). Names of variables are: 
+- ***'activity'*** a *'character'* name of activity (*walking, walking_upstairs, walking_downstairs, sittings, standing, laying*).
+- ***'subjectID'*** an *'integer'* ID of obtained subject in range 1 to 30.
+- ***'Averege Featured variables'*** a *'double'* average of each 'Featured variable' from 'Source Data' (note: only for Mean and Standard deviation variables in source) for each activity and each subject ('AVG' prefix means avarege). Names of variables are: 
 
-AVGtimeBodyAccXYZ
-AVGtimeGravityAccXYZ
-AVGtimeBodyAccJerkXYZ
-AVGtimeBodyGyroXYZ
-AVGtimeBodyGyroJerkXYZ
-AVGtimeBodyAccMag
-AVGtimeGravityAccMag
-AVGtimeBodyAccJerkMag
-AVGtimeBodyGyroMag
-AVGtimeBodyGyroJerkMag
-AVGfrequencyBodyAcc-XYZ
-AVGfrequencyBodyAccJerkXYZ
-AVGfrequencyBodyGyroXYZ
-AVGfrequencyBodyAccMag
-AVGfrequencyBodyAccJerkMag
-AVGfrequencyBodyGyroMag
-AVGfrequencyBodyGyroJerkMag
 
-Plus adding of 'Mean' or 'Std' according that were estimated from these signals are:
-'Mean': Mean value
+---------------------------------------
+
+> AVGtimeBodyAccXYZ </br>
+AVGtimeGravityAccXYZ</br>
+AVGtimeBodyAccJerkXYZ</br>
+AVGtimeBodyGyroXYZ</br>
+AVGtimeBodyGyroJerkXYZ</br>
+AVGtimeBodyAccMag</br>
+AVGtimeGravityAccMag</br>
+AVGtimeBodyAccJerkMag</br>
+AVGtimeBodyGyroMag</br>
+AVGtimeBodyGyroJerkMag</br>
+AVGfrequencyBodyAcc-XYZ</br>
+AVGfrequencyBodyAccJerkXYZ</br>
+AVGfrequencyBodyGyroXYZ</br>
+AVGfrequencyBodyAccMag</br>
+AVGfrequencyBodyAccJerkMag</br>
+AVGfrequencyBodyGyroMag</br>
+AVGfrequencyBodyGyroJerkMag</br>
+
+Plus adding of 'Mean' or 'Std' according that were estimated from these signals are:</br>
+> 'Mean': Mean value</br>
 'Std': Standard deviation
 
 #### Description of 'Featured variable' from 'Source Data' following below.
@@ -53,51 +56,57 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+> tBodyAcc-XYZ</br>
+tGravityAcc-XYZ</br>
+tBodyAccJerk-XYZ</br>
+tBodyGyro-XYZ</br>
+tBodyGyroJerk-XYZ</br>
+tBodyAccMag</br>
+tGravityAccMag</br>
+tBodyAccJerkMag</br>
+tBodyGyroMag</br>
+tBodyGyroJerkMag</br>
+fBodyAcc-XYZ</br>
+fBodyAccJerk-XYZ</br>
+fBodyGyro-XYZ</br>
+fBodyAccMag</br>
+fBodyAccJerkMag</br>
+fBodyGyroMag</br>
+fBodyGyroJerkMag</br>
+
+
+--------------------------------------
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+> mean(): Mean value</br>
+std(): Standard deviation</br>
+mad(): Median absolute deviation </br>
+max(): Largest value in array</br>
+min(): Smallest value in array</br>
+sma(): Signal magnitude area</br>
+energy(): Energy measure. Sum of the squares divided by the number of values. </br>
+iqr(): Interquartile range </br>
+entropy(): Signal entropy</br>
+arCoeff(): Autorregresion coefficients with Burg order equal to 4</br>
+correlation(): correlation coefficient between two signals</br>
+maxInds(): index of the frequency component with largest magnitude</br>
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency</br>
+skewness(): skewness of the frequency domain signal </br>
+kurtosis(): kurtosis of the frequency domain signal </br>
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.</br>
+angle(): Angle between to vectors.</br>
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+------------------------------------------------
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:</br>
+
+> gravityMean</br>
+tBodyAccMean</br>
+tBodyAccJerkMean</br>
+tBodyGyroMean</br>
+tBodyGyroJerkMean</br>
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
